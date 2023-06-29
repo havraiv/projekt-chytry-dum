@@ -1,10 +1,13 @@
 import React from 'react';
 import './style.css';
+import tempImg from './img/temp.svg';
 
 export const Climate = () => {
   return (
     <div className="climate">
-      <div className="climate__icon">{/* <img src="./images/temp.svg"> */}</div>
+      <div className="climate__icon">
+        <img src={tempImg} />
+      </div>
       <div className="climate__content">
         <div className="climate__temperature">24&deg;C</div>
         <div className="climate__humidity">Vlhost vzduchu 51&nbsp;%</div>
