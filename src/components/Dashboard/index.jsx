@@ -3,6 +3,7 @@ import './style.css';
 import { Lights } from './components/Lights';
 import { Climate } from './components/Climate';
 import { Blinds } from './components/Blinds';
+import { Energy } from './components/Energy';
 
 export const Dashboard = ({ data }) => {
   return (
@@ -13,6 +14,10 @@ export const Dashboard = ({ data }) => {
         humidity={data.climate.humidity}
       />
       <Blinds state={data.blinds} />
+      <Energy
+        electricity={data.energyConsumption.electricity}
+        water={data.energyConsumption.water}
+      />
     </main>
   );
 };
