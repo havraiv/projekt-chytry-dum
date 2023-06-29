@@ -1,7 +1,11 @@
 import React from 'react';
 import './style.css';
+import { Lights } from './components/Lights';
 
 export const Dashboard = ({ data }) => {
-  console.log(data);
-  return <main className="dashboard"></main>;
+  return (
+    <main className="dashboard">
+      <Lights lights={data.lights} />
+    </main>
+  );
 };
